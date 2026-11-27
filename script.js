@@ -72,19 +72,6 @@ document.documentElement.classList.add('js');
     update();
 })();
 
-// ---------- WhatsApp contact form ----------
-(function () {
-    var form = document.getElementById('waForm');
-    if (!form) return;
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var name = document.getElementById('cname').value.trim();
-        var msg = document.getElementById('cmsg').value.trim();
-        var text = 'Hi Darshan, I am ' + name + '. ' + msg;
-        window.open('https://wa.me/919586930070?text=' + encodeURIComponent(text), '_blank', 'noopener');
-    });
-})();
-
 // ---------- Footer year ----------
 var y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
